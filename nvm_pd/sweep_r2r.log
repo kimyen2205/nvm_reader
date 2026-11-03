@@ -1,0 +1,24 @@
+PERIOD 3 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+            1.189   slack (MET)
+PERIOD 2 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+            0.189   slack (MET)
+PERIOD 1.5 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+           -0.311   slack (VIOLATED)
+PERIOD 1.2 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+           -0.611   slack (VIOLATED)
+PERIOD 1.0 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+           -0.811   slack (VIOLATED)
+PERIOD 0.8 ns
+Startpoint: _71_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _63_ (rising edge-triggered flip-flop clocked by clk)
+           -1.011   slack (VIOLATED)

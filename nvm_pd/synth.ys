@@ -1,0 +1,8 @@
+read_verilog -sv nvm_reader.v
+hierarchy -check -top NVM_reader
+synth -top NVM_reader -flatten
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib -D 10000
+opt_clean -purge
+stat -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr -noexpr netlist.v

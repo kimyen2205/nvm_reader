@@ -1,0 +1,8 @@
+read_verilog -sv nvm_reader.v
+hierarchy -check -top NVM_reader
+synth -top NVM_reader -flatten
+dfflibmap -liberty sky130_nolp.lib
+abc -liberty sky130_nolp.lib -D 1500
+opt_clean -purge
+stat -liberty sky130_nolp.lib
+write_verilog -noattr -noexpr netlist_nolp.v

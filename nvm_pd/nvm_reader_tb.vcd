@@ -1,0 +1,471 @@
+$date
+	Tue Nov  3 15:21:51 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_NVM_reader $end
+$var wire 1 ! data_out $end
+$var wire 1 " chip_finish $end
+$var wire 8 # address_out [7:0] $end
+$var reg 8 $ address_in [7:0] $end
+$var reg 1 % clk $end
+$var reg 8 & data_in [7:0] $end
+$var reg 1 ' read_en $end
+$var reg 1 ( rst_n $end
+$scope module uut $end
+$var wire 8 ) address_in [7:0] $end
+$var wire 1 % clk $end
+$var wire 8 * data_in [7:0] $end
+$var wire 1 ' read_en $end
+$var wire 1 ( rst_n $end
+$var wire 1 + shift $end
+$var wire 1 , load $end
+$var wire 1 ! data_out $end
+$var wire 1 " chip_finish $end
+$var wire 8 - address_out [7:0] $end
+$scope module controller_inst $end
+$var wire 1 % clk $end
+$var wire 1 ' read_en $end
+$var wire 1 ( rst_n $end
+$var wire 1 + shift $end
+$var wire 1 , load $end
+$var wire 1 . finish $end
+$var reg 1 " chip_finish $end
+$var reg 1 / en $end
+$scope module u_counter $end
+$var wire 1 % clk $end
+$var wire 1 / en $end
+$var wire 1 ( rst_n $end
+$var wire 1 . finish $end
+$var reg 3 0 q [2:0] $end
+$upscope $end
+$scope module u_fsm $end
+$var wire 1 % clk $end
+$var wire 1 . finish $end
+$var wire 1 ' read_en $end
+$var wire 1 ( rst_n $end
+$var wire 1 + shift $end
+$var wire 1 , load $end
+$var parameter 2 1 IDLE $end
+$var parameter 2 2 LOAD $end
+$var parameter 2 3 SHIFT $end
+$var reg 2 4 current_state [1:0] $end
+$var reg 2 5 next_state [1:0] $end
+$upscope $end
+$upscope $end
+$scope module piso_inst $end
+$var wire 1 % clk $end
+$var wire 8 6 data_in [7:0] $end
+$var wire 1 , load $end
+$var wire 1 ( rst_n $end
+$var wire 1 + shift $end
+$var reg 1 ! data_out $end
+$var reg 8 7 tmp [7:0] $end
+$upscope $end
+$upscope $end
+$scope task do_read $end
+$var reg 8 8 a [7:0] $end
+$var reg 8 9 d [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 3
+b1 2
+b0 1
+$end
+#0
+$dumpvars
+bx 9
+bx 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 0
+0/
+0.
+b0 -
+0,
+0+
+b0 *
+b0 )
+0(
+0'
+b0 &
+0%
+b0 $
+b0 #
+0"
+0!
+$end
+#5000
+1%
+#10000
+0%
+#15000
+1%
+#20000
+0%
+#25000
+1%
+b10100101 $
+b10100101 )
+b10110010 &
+b10110010 *
+b10110010 6
+b10100101 8
+b10110010 9
+1(
+#26000
+b1 5
+1'
+#30000
+0%
+#35000
+b10 5
+b10100101 #
+b10100101 -
+1,
+b1 4
+1%
+#36000
+b10 5
+0'
+#40000
+0%
+#45000
+b10 5
+b0 #
+b0 -
+1+
+b10110010 7
+0,
+b10 4
+1%
+#50000
+0%
+#55000
+1/
+b1100100 7
+1!
+1%
+#60000
+0%
+#65000
+b11001000 7
+0!
+b1 0
+1%
+#70000
+0%
+#75000
+b10 0
+b10010000 7
+1!
+1%
+#80000
+0%
+#85000
+b100000 7
+b11 0
+1%
+#90000
+0%
+#95000
+b100 0
+b1000000 7
+0!
+1%
+#100000
+0%
+#105000
+b10000000 7
+b101 0
+1%
+#110000
+0%
+#115000
+b110 0
+b0 7
+1!
+1%
+#120000
+0%
+#125000
+0+
+b0 5
+0!
+1.
+b111 0
+1%
+#130000
+0%
+#135000
+b0 4
+0.
+b0 0
+1"
+0/
+1%
+#140000
+0%
+#145000
+0"
+1%
+#150000
+0%
+#155000
+1%
+#160000
+0%
+#165000
+1%
+#170000
+0%
+#175000
+b111111 $
+b111111 )
+b11001101 &
+b11001101 *
+b11001101 6
+b111111 8
+b11001101 9
+1%
+#180000
+0%
+#185000
+1%
+#186000
+b1 5
+1'
+#190000
+0%
+#195000
+b10 5
+b111111 #
+b111111 -
+1,
+b1 4
+1%
+#196000
+b10 5
+0'
+#200000
+0%
+#205000
+b10 5
+b0 #
+b0 -
+1+
+b11001101 7
+0,
+b10 4
+1%
+#210000
+0%
+#215000
+1/
+b10011010 7
+1!
+1%
+#220000
+0%
+#225000
+b110100 7
+b1 0
+1%
+#230000
+0%
+#235000
+b10 0
+b1101000 7
+0!
+1%
+#240000
+0%
+#245000
+b11010000 7
+b11 0
+1%
+#250000
+0%
+#255000
+b100 0
+b10100000 7
+1!
+1%
+#260000
+0%
+#265000
+b1000000 7
+b101 0
+1%
+#270000
+0%
+#275000
+b110 0
+b10000000 7
+0!
+1%
+#280000
+0%
+#285000
+0+
+b0 5
+b0 7
+1!
+1.
+b111 0
+1%
+#290000
+0%
+#295000
+b0 4
+0.
+b0 0
+1"
+0/
+0!
+1%
+#300000
+0%
+#305000
+0"
+1%
+#310000
+0%
+#315000
+1%
+#320000
+0%
+#325000
+1%
+#330000
+0%
+#335000
+b1111110 $
+b1111110 )
+b1101010 &
+b1101010 *
+b1101010 6
+b1111110 8
+b1101010 9
+1%
+#340000
+0%
+#345000
+1%
+#346000
+b1 5
+1'
+#350000
+0%
+#355000
+b10 5
+b1111110 #
+b1111110 -
+1,
+b1 4
+1%
+#356000
+b10 5
+0'
+#360000
+0%
+#365000
+b10 5
+b0 #
+b0 -
+1+
+b1101010 7
+0,
+b10 4
+1%
+#370000
+0%
+#375000
+1/
+b11010100 7
+1%
+#380000
+0%
+#385000
+b10101000 7
+1!
+b1 0
+1%
+#390000
+0%
+#395000
+b10 0
+b1010000 7
+1%
+#400000
+0%
+#405000
+b10100000 7
+0!
+b11 0
+1%
+#410000
+0%
+#415000
+b100 0
+b1000000 7
+1!
+1%
+#420000
+0%
+#425000
+b10000000 7
+0!
+b101 0
+1%
+#430000
+0%
+#435000
+b110 0
+b0 7
+1!
+1%
+#440000
+0%
+#445000
+0+
+b0 5
+0!
+1.
+b111 0
+1%
+#450000
+0%
+#455000
+b0 4
+0.
+b0 0
+1"
+0/
+1%
+#460000
+0%
+#465000
+0"
+1%
+#470000
+0%
+#475000
+1%
+#480000
+0%
+#485000
+1%
+#490000
+0%
+#495000
+1%

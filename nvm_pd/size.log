@@ -1,0 +1,9 @@
+SIZE nor2b_1
+    18    0.840    0.662    1.029 ^ _29_/Y (sky130_fd_sc_hd__nor2b_1)
+                            8.189   slack (MET)
+SIZE nor2b_2
+    18    0.499    0.427    0.804 ^ _29_/Y (sky130_fd_sc_hd__nor2b_2)
+                            8.428   slack (MET)
+SIZE nor2b_4
+    18    0.298    0.290    0.683 ^ _29_/Y (sky130_fd_sc_hd__nor2b_4)
+                            8.564   slack (MET)
